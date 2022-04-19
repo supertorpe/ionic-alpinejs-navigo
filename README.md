@@ -1,2 +1,2 @@
 # ionic-alpinejs-navigo
-Ionic 6 + Alpine.js + Navigo router
+This repo contains a Typescript Ionic 6 project with Alpine.js and Navigo router

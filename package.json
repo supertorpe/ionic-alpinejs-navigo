@@ -1,0 +1,19 @@
+{
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@ionic/core": "^6.1.1",
+    "alpinejs": "^3.9.6",
+    "navigo": "^8.11.1"
+  },
+  "devDependencies": {
+    "@types/alpinejs": "^3.7.0",
+    "sass": "^1.50.0",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.5"
+  }
+}

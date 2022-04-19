@@ -1,0 +1,29 @@
+<span x-data="info">
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title x-text="title"></ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-grid >
+    <ion-row>
+        <template x-for="(item, $index) in values">
+            <ion-col>
+                <ion-button color="light" expand="block" x-text="item"></ion-button>
+            </ion-col>
+        </template>
+    </ion-row>
+</ion-grid>
+<ion-segment>
+    <ion-segment-button @click="sort()">
+        <ion-icon src="assets/svg/add-circle-outline.svg"></ion-icon>
+        <ion-label>sort</ion-label>
+      </ion-segment-button>
+      <ion-segment-button @click="disorder()">
+        <ion-icon src="assets/svg/arrow-back-circle-outline.svg"></ion-icon>
+        <ion-label>disorder</ion-label>
+      </ion-segment-button>
+</ion-segment>
+</span>
