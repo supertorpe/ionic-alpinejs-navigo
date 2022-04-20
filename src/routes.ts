@@ -13,9 +13,9 @@ const aboutRoute = () => openRoute('about.html', 'ion-router-outlet', aboutContr
 
 new Navigo('/', { hash: true })
     .on({
-        '': () => { appRoute().then(() => homeRoute()); },
+        '/ionic-alpinejs-navigo': () => { appRoute().then(() => homeRoute()); },
         '/home': () => { appRoute().then(() => homeRoute()); },
         '/page/:name': (info: any) => { appRoute().then(() => pageRoute(info.data)); },
-        '/about': () => { appRoute().then(() => aboutRoute()); },
+        'about': () => { appRoute().then(() => aboutRoute()); },
     })
     .resolve();

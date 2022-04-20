@@ -2,8 +2,8 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "serve": "vite preview"
+    "build": "tsc && vite build --base=/ionic-alpinejs-navigo/",
+    "serve": "vite preview --base=/ionic-alpinejs-navigo/"
   },
   "dependencies": {
     "@ionic/core": "^6.1.1",
