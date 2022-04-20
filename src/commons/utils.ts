@@ -1,8 +1,9 @@
+import Navigo from 'navigo';
 import { Controller } from './controller';
 
 const templates = new Map<string, string>();
 
-export const openRoute = (template: string, targetElementSelector: string, controller: Controller, params?: any): Promise<void> => {
+export const openRoute = (navigo: Navigo, template: string, targetElementSelector: string, controller: Controller, params?: any): Promise<void> => {
     return new Promise<void>(resolve => {
         const targetElement = document.querySelector(targetElementSelector);
         if (targetElement) {
@@ -10,6 +11,7 @@ export const openRoute = (template: string, targetElementSelector: string, contr
                 mutations.forEach((_mutation) => {
                     if (controller) {
                         elementObserver.disconnect();
+                        navigo.updatePageLinks();
                         controller.run(params);
                         resolve();
                     }
