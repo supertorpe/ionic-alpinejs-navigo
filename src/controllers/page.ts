@@ -34,8 +34,7 @@ class PageController implements Controller {
         disorder();
     }
 
-    run($routeParams?: any): void {
-        console.log(JSON.stringify($routeParams));
+    run(_$routeParams?: any): void {
     }
 }
 
