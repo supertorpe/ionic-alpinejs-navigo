@@ -1,7 +1,7 @@
 {
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --base=/ionic-alpinejs-navigo/",
     "build": "tsc && vite build --base=/ionic-alpinejs-navigo/",
     "serve": "vite preview --base=/ionic-alpinejs-navigo/"
   },
@@ -14,6 +14,7 @@
     "@types/alpinejs": "^3.7.0",
     "sass": "^1.50.0",
     "typescript": "^4.6.3",
-    "vite": "^2.9.5"
+    "vite": "^2.9.5",
+    "vite-plugin-pwa": "^0.12.0"
   }
 }

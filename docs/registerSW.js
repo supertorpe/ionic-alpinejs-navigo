@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/ionic-alpinejs-navigo/sw.js', { scope: '/ionic-alpinejs-navigo/' })})}
