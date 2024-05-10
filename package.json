@@ -2,19 +2,19 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite --base=/ionic-alpinejs-navigo/",
-    "build": "tsc && vite build --base=/ionic-alpinejs-navigo/",
+    "build": "tsc && vite build --emptyOutDir --base=/ionic-alpinejs-navigo/",
     "serve": "vite preview --base=/ionic-alpinejs-navigo/"
   },
   "dependencies": {
-    "@ionic/core": "^6.1.1",
-    "alpinejs": "^3.9.6",
+    "@ionic/core": "^8.1.1",
+    "alpinejs": "^3.13.10",
     "navigo": "^8.11.1"
   },
   "devDependencies": {
-    "@types/alpinejs": "^3.7.0",
-    "sass": "^1.50.0",
-    "typescript": "^4.6.3",
-    "vite": "^2.9.5",
-    "vite-plugin-pwa": "^0.12.0"
+    "@types/alpinejs": "^3.13.10",
+    "sass": "^1.77.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "vite-plugin-pwa": "^0.17.5"
   }
 }

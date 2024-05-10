@@ -6,10 +6,10 @@ class AppController extends BaseController {
     preload(_$routeParams?: any): void {
         Alpine.store('info', {
             changeTheme: () => {
-                if (document.querySelector('body')?.classList.contains('dark')) {
-                    document.querySelector('body')?.classList.remove('dark');
+                if (document.querySelector('html')?.classList.contains('ion-palette-dark')) {
+                    document.querySelector('html')?.classList.remove('ion-palette-dark');
                 } else {
-                    document.querySelector('body')?.classList.add('dark');
+                    document.querySelector('html')?.classList.add('ion-palette-dark');
                 }
             }
         });
